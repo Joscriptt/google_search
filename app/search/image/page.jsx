@@ -47,7 +47,7 @@ async function page({ searchParams }) {
                 <img
                   width={1000}
                   height={1000}
-                  className="h-52 bg-neutral-600 object-cover  max-w-full rounded-lg"
+                  className="h-60 w-full bg-neutral-600 object-cover   rounded-lg"
                   src={each.link}
                   alt={each.title}
                 />
