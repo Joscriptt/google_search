@@ -76,7 +76,7 @@ function Home() {
             />
           </div>
 
-          <button className="bg-[#01FE0A] text-[#0f3410] text-xs h-9 rounded-full p-1 px-2 ml-1 ">
+          <button className="bg-[#01FE0A] text-[#000000] text-xs h-9 rounded-full p-1 px-2 ml-1 ">
             Invite Friends
           </button>
         </div>
@@ -86,8 +86,8 @@ function Home() {
         </div>
       </div>
 
-      <div className="relative   w-full">
-        <div className="bg-black text-neutral-600 w-64 h-20 p-3 rounded-b-2xl rounded-r-2xl absolute lg:inset-52 top-32 ">
+      <div className="relative   w-full hidden md:block">
+        <div className="bg-black text-neutral-600 w-64 h-20 p-3 rounded-b-2xl rounded-r-2xl absolute lg:inset-40 top-3 ">
           <p className="text-neutral-600 text-sm">
             Beyond is beyond my expectations at this point. They are genius{" "}
             <span className="text-[#01FE0A]">#Joscrpt party</span>
@@ -106,8 +106,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      
 
       <div className="flex flex-col items-center h-full w-full justify-center">
         <div className="mt-40">
@@ -181,42 +179,44 @@ function Home() {
             </div>
           </div>
 
-          <form
-            // action=""
-            onSubmit={handleSubmit}
-            className="mt-5 bg-neutral-900 md:w-[27rem]  h-10 rounded-md px-3 flex items-center justify-between  gap-x-3"
-          >
-            {/* Icon */}
-            <PiGoogleLogo className="text-neutral-500 text-2xl" />
-            <input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              className="bg-transparent outline-none w-full h-full text-neutral-600 placeholder:text-neutral-600"
-              type="text"
-              placeholder="Search here"
-            />
-            <button className="text-neutral-600 text-sm" type="submit">
-              {loading ? (
-                <div>
-                  <svg
-                    fill="none"
-                    class="h-8 w-8 animate-spin text-neutral-400"
-                    viewBox="0 0 32 32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      clip-rule="evenodd"
-                      d="M15.165 8.53a.5.5 0 01-.404.58A7 7 0 1023 16a.5.5 0 011 0 8 8 0 11-9.416-7.874.5.5 0 01.58.404z"
-                      fill="currentColor"
-                      fill-rule="evenodd"
-                    />
-                  </svg>
-                </div>
-              ) : (
-                <> Location</>
-              )}
-            </button>
-          </form>
+          <div className="px-6">
+            <form
+              // action=""
+              onSubmit={handleSubmit}
+              className="mt-5 bg-neutral-900 md:w-[27rem]  h-10 rounded-md px-3 flex items-center justify-between  gap-x-3"
+            >
+              {/* Icon */}
+              <PiGoogleLogo className="text-neutral-500 text-2xl" />
+              <input
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                className="bg-transparent outline-none w-full h-full text-neutral-600 placeholder:text-neutral-600"
+                type="text"
+                placeholder="Search here"
+              />
+              <button className="text-neutral-600 text-sm" type="submit">
+                {loading ? (
+                  <div>
+                    <svg
+                      fill="none"
+                      class="h-8 w-8 animate-spin text-neutral-400"
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M15.165 8.53a.5.5 0 01-.404.58A7 7 0 1023 16a.5.5 0 011 0 8 8 0 11-9.416-7.874.5.5 0 01.58.404z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                ) : (
+                  <> Location</>
+                )}
+              </button>
+            </form>
+          </div>
 
           {error && (
             <section>
