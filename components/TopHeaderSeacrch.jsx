@@ -58,28 +58,28 @@ function TopHeaderSeacrch() {
     setCancel(false);
   };
 
-  const ButtonVariant = {
-    closed: {
-      height: "0px",
-      display: "none",
-      transition: { duration: 0.1 },
-    },
+  // const ButtonVariant = {
+  //   closed: {
+  //     height: "0px",
+  //     display: "none",
+  //     transition: { duration: 0.1 },
+  //   },
 
-    open: {
-      height: "auto",
-      display: "grid",
-      gridTemplateColumn: "repeat(2, 1fr)",
-      transition: { when: "beforeChildren", duration: 0.1 },
-    },
-  };
+  //   open: {
+  //     height: "auto",
+  //     display: "grid",
+  //     gridTemplateColumn: "repeat(2, 1fr)",
+  //     transition: { when: "beforeChildren", duration: 0.1 },
+  //   },
+  // };
 
-  const handleClick = (cat) => {
-    cycleOpen(!open);
+  // const handleClick = (cat) => {
+  //   cycleOpen(!open);
 
-    route.push(
-      `/search/${cat === "images" ? "images" : "web"}?searchTerm=${searchTerm}`
-    );
-  };
+  //   route.push(
+  //     `/search/${cat === "images" ? "images" : "web"}?searchTerm=${searchTerm}`
+  //   );
+  // };
 
   return (
     <div className="sticky top-0 p-2 ">

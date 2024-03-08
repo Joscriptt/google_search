@@ -7,8 +7,6 @@ import React, { useState } from "react";
 import SelectCountry from "./SelectCountry";
 
 function Footer() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [country, setCountry] = useState("AF");
   return (
     <div className="fixed bottom-0 w-full h-16 border-t border-neutral-800 flex justify-between items-center px-3 backdrop-blur-lg">
       <div className="hidden sm:block">

@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import ChangePath from "@/components/ChangePath";
+import { Suspense } from "react";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +17,12 @@ export default function RootLayout({ children }) {
       {/* 080808 */}
       <body className={`} bg-[#080808]`}>
         {/* <body className={`${inter.className} bg-[#080808]`}> */}
-        <ChangePath />
+        <Suspense>
+          <ChangePath />
 
-        <main>{children}</main>
-        <Footer />
+          <main>{children}</main>
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );
