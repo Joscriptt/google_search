@@ -20,7 +20,7 @@ function Footer() {
         <SelectCountry />
       </div>
       <p className=" text-center text-xs text-[#616161]">
-        @Owned by Joscript. All Rights Reserverd {new Date().getFullYear()}
+        @Owned by zen. All Rights Reserverd {new Date().getFullYear()}
       </p>
       <div className="text-neutral-600 sm:flex items-center hidden text-xs gap-x-3 ">
         <span>Help</span>
