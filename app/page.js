@@ -183,7 +183,7 @@ function Home() {
             <form
               // action=""
               onSubmit={handleSubmit}
-              className="mt-5 bg-neutral-900 md:w-[27rem]  h-10 rounded-md px-3 flex items-center justify-between  gap-x-3"
+              className="mt-5 bg-neutral-900 md:w-[26rem]  h-10 rounded-md px-3 flex items-center justify-between  gap-x-3"
             >
               {/* Icon */}
               <PiGoogleLogo className="text-neutral-500 text-2xl" />
